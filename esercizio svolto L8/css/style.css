@@ -1,0 +1,136 @@
+html{
+    background-image: url(./img/trasferimento.jpg);
+}
+
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: linear-gradient(135deg, #2E353F, #4A4F57, #0F1114);
+    border: 8px #C65A1E;
+    border-style: inset;
+}
+
+header{
+    color: rgb(255, 255, 255);
+}
+
+#paragraph{
+    text-align: center;
+    background: linear-gradient(135deg, #2E353F, #4A4F57, #0F1114);
+    background-color: #3b3d41;
+    border-bottom: 10px solid #c65a1e;
+    padding: 30px;
+}
+
+table{
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 50px 5px;
+}
+
+#tabella{
+    margin-left: auto;
+    margin-right: auto;  
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #2E353F, #4A4F57, #0F1114);
+    border-bottom: 10px solid #c65a1e;
+    color: #f2f2f2;
+    padding: 30px 100px;
+    width: fit-content;
+
+}
+
+#table-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.th-name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;    
+    text-align: center;
+}
+
+.tr-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#trailer{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    border: 8px double #C65A1E;
+    background-color: #4A4F57;
+}
+
+iframe{
+    border: 4px solid #C65A1E;
+    border-radius: 20px;
+}
+
+#title{
+    background: linear-gradient(135deg, #484848, #ffffff, #4d5156);
+    background-color: #3b3d41;
+    border-bottom: 10px solid #c65a1e;
+    padding: 30px;
+}
+
+form{
+    border: 8px double #222;
+    background-color: #ed6f00;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+form label{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    background-color: #d4aa03; /* verde militare */
+    color: #ffffff;           /* beige chiaro per il testo */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    border: 2px solid #333;   /* bordo scuro robusto */
+    border-radius: 4px;       /* angoli leggermente arrotondati */
+    box-shadow: 2px 2px 5px #111 inset, 0 4px 0 #222; /* effetto “scalfito e sollevato” */
+    cursor: pointer;
+    transition: all 0.5s ease;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 0 #222;
+}
+
+button:hover {
+  background-color: #d08400; /* verde più brillante al passaggio */
+  box-shadow: 1px 1px 3px #111 inset, 0 2px 0 #222;
+  transform: translateY(1px);
+}
+
+button:active {
+  background-color: #b02802; /* verde scuro quando premuto */
+  box-shadow: inset 0 2px 5px #111; 
+  transform: translateY(3px);
+}
+
+footer{
+    text-align: center;
+    color: #ffffff;
+    background-color: #0F1114;
+}

@@ -1,0 +1,169 @@
+:root{
+    --verde-acqua : rgb(26 188 156);
+    --blu: rgb(44 62 80);
+}
+
+/*common styles*/
+*{
+    box-sizing: border-box;
+}
+
+.spaced-container{
+    padding: 70px 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+input, textarea{
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+.btn-send{
+    background-color: var(--verde-acqua);
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-border{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.btn-border::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url(/img/icons8-scaricare-100.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#copyright{
+    padding: 40px;
+    font-size: smaller;
+}
+
+/*typography*/
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    line-height: 2rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.line{
+    /*border-bottom: 3px solid black;*/
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+/*colors*/
+.bc-aqua{
+    background-color: var(--verde-acqua);
+}
+
+.bc-blu{
+    background-color: var(--blu);
+}
+
+.bc-blu-different{
+    background-color: rgb(30, 30, 54);
+}
+
+.text-white{
+    color: white;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+.green{
+    background-color: green;
+}
+
+.royal-blue{
+    background-color: royalblue;
+}
+
+.black{
+    background-color: black;
+}
+
+.dodger-blue{
+    background-color: dodgerblue;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.aquamarine{
+    color: aquamarine;
+}
+
+
+/*header*/
+header{
+    padding: 10px 15px;
+    color: white;
+}
+
+
+
+/*main*/
+.my-picture{
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.card{
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card img{
+    border-radius: 50%;
+}
+

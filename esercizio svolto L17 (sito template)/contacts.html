@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukowski WebSite</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7cOpen+Sans:300,400,400i,600,700"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo-col"><span>L</span>ukowski <span>W</span>eb<span>S</span>ite</div>
+            <address class="contact-col">
+                <a href="tel:+12345678910"><i class="fas fa-phone"></i>+12 345 678910</a>
+            </address>
+            <nav class="menu-col">
+                <ul id="menu">
+                    <li><a href="index.html" class="menu-link">HOME</a></li>
+                    <li><a href="about.html" class="menu-link">ABOUT</a></li>
+                    <li><a href="contacts.html" class="menu-link active">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact bg-light">
+        <div class="container">
+            <div class="col-grid">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Name...">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email...">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder="Subject...">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder="Message..."></textarea>
+                    </div>
+                    <button class="btn btn-primary">SUBMIT</button>
+                </form>
+            </div>
+            <div class="col-grid">
+                <div class="section-header section-header--right">
+                    <h2>GET IN <span class="highlight">TOUCH</span></h2>
+                    <p>Lorem ipsum dolor sit amet, velit urna. Morbi ornare eu amet. Faucet venenatis adipiscing. Lacus
+                        lorem molestie mauris.</p>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>1234 Street Name, City, Country</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <i class="fas fa-phone"></i>
+                        <p>+12 345 678910</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-dark">
+        <div class="container">
+                <div class="footer-content">
+                    <h1>FOLLOW US ON</h1>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="X">
+                            <i class="fa-solid fa-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="footer-copyright">Copyright © 2016 Lukowski Website. All Rights Reserved.</div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+.box {
+    min-height: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 400px;
+}
+.section-title {
+    min-height: 60px;
+}
+.feature-box {
+    min-height: 120px;
+}
+.team-card {
+    min-height: 300px;
+}
+.pricing-card {
+    min-height: 400px;
+}
+.min-h-200 {
+    min-height: 200px;
+}
+.min-h-250 {
+    min-height: 250px;
+}
+.min-h-350 {
+    min-height: 350px;
+}
+.min-h-100 {
+    min-height: 100px;
+}
