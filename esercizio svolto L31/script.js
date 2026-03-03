@@ -39,17 +39,12 @@
 // Chiama la funzione e salva il risultato in una variabile, poi stampala
 
     function somma (a,b){
-        console.log(a + b);
-    };
-
-    somma(2,5);
-
-    function restituisciSomma (a,b){
         return a + b;
-    };
+    }
+    
+    let res = somma(5,7);
+    console.log(res);
 
-    let risultato = restituisciSomma(2,5);
-    console.log(risultato);
 
 // ==================
 // ESERCIZIO 4: ARRAY - PUSH E POP
@@ -62,13 +57,12 @@
 
     let colori = [];
 
-    colori.push("rosso");
-    colori.push("verde");
-    colori.push("blu");
+    colori.push("rosso", "verde", "blu");
 
     console.log(colori);
 
-    colori.pop("blu");
+    colori.pop();    //senza nulla rimuove l'ultimo elemento, se invece voglio rimuovere un elemento 
+                    // specifico devo scrivere l'elemento da rimuovere tipo colori.pop("verde");
     
     console.log(colori);
 
@@ -115,7 +109,7 @@
 
     let parole = ["JavaScript", "è", "fantastico"];
 
-    let frase = parole.join();
+    const frase = parole.join(" ");
 
     console.log(frase);
 
@@ -127,10 +121,10 @@
 // Usa concat() per unire i due array in un nuovo array "tuttaLaFrutta"
 // Stampa il risultato
 
-    let frutta1 = ["mela", "pera"];
-    let frutta2 = ["banana", "arancia"];
+    const frutta1 = ["mela", "pera"];
+    const frutta2 = ["banana", "arancia"];
 
-    let tuttaLaFrutta = frutta1.concat(frutta2);
+    const tuttaLaFrutta = frutta1.concat(frutta2);
 
     console.log(tuttaLaFrutta);
 
@@ -143,9 +137,15 @@
 // Usa includes() per verificare se "Parigi" è nell'array
 // Stampa i risultati (true/false)
 
-    let città = ["Roma", "Londra", "Berlino", "Atene"];
+    const città = ["Roma", "Londra", "Berlino", "Atene"];
     console.log(città.includes("Roma"));
     console.log(città.includes("Parigi"));
+
+    //esempio con if (di utilizzo più comune)
+
+    if(!città.includes("Parigi")){
+        console.log("Non operiamo nella tua città!");
+    };
 
 
 // ==================
@@ -156,11 +156,19 @@
 // Usa indexOf() per cercare "z" (che non c'è)
 // Stampa i risultati
 
-    let lettere = ["a","b","c","d","e"];
+    const lettere = ["a","b","c","d","e"];
 
-    console.log(lettere.indexOf("c"));
-    console.log(lettere.indexOf("z"));
+    const posC = lettere.indexOf("c");
+    console.log(posC);
 
+    const posZ = lettere.indexOf("z");
+    console.log(posZ);
+
+    //esempio con if (di utilizzo più comune)
+
+    if(lettere.indexOf("z") === -1){
+        console.log("La lettera z non è presente nell'array!");
+    };
 
 // ==================
 // ESERCIZIO 11: OGGETTO SEMPLICE
@@ -210,7 +218,7 @@
         nome : "Luca",
         voto : 28,
         stampaInfo : function(){
-            console.log("Nome: " + this.nome + ", Voto: " + this.voto);
+            console.log(`Nome: ${this.nome}, Voto: ${this.voto}`); //per fare il backtick (accento grave) si usa alt + 96, in questo modo posso inserire variabili all'interno di stringhe senza dover fare concatenazione con +, basta mettere la variabile tra ${} e funziona!
         }
     };
 
@@ -258,13 +266,20 @@
 // Stampa l'oggetto creato
 
     function creaPersona(nome, eta){
-        return {
+        const persona = {
             nome : nome,
             eta : eta,
-        };
+        }; 
+        return eta;
     };
+
+    //scritto in breve
     
-    let nuovaPersona = creaPersona("Luca", 29);
+    function creaPersonaVersioneBreve(nome, eta){ 
+        return {nome, eta}; //se la proprietà e il valore hanno lo stesso nome posso scrivere solo una volta il nome, in questo modo è come se avessi scritto nome : nome, eta : eta
+    };
+
+    const nuovaPersona = creaPersonaVersioneBreve("Luca", 29);
 
     console.log(nuovaPersona);  
 
@@ -322,4 +337,4 @@
     contoBancario.preleva(200);
     contoBancario.mostraSaldo();
 
-    
+
