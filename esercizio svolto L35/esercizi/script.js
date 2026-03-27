@@ -9,6 +9,11 @@
 // Usa un ciclo for per stampare in console i numeri da 1 a 10
 // Ogni numero deve essere stampato su una riga separata
 
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i=0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
 
 // ==================
 // ESERCIZIO 2: FOR ALL'INDIETRO
@@ -16,6 +21,11 @@
 // Usa un ciclo for per stampare in console i numeri da 10 a 1 (al contrario)
 // Ogni numero deve essere stampato su una riga separata
 
+let numbersReverse = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+
+for (let i=0; i < numbersReverse.length; i++) {
+    console.log(numbersReverse[i]);
+}
 
 // ==================
 // ESERCIZIO 3: SOMMA CON FOR
@@ -23,6 +33,15 @@
 // Crea una variabile "somma" inizializzata a 0
 // Usa un ciclo for per sommare tutti i numeri da 1 a 100
 // Stampa il risultato finale in console
+
+let somma = 0;
+
+for (let i=1; i <=100; i++) {
+    somma += i;
+}
+
+console.log(somma);
+
 
 
 // ==================
@@ -32,6 +51,9 @@
 let frutti = ["mela", "banana", "arancia", "pera", "kiwi"];
 // Usa un ciclo for per stampare in console ogni frutto dell'array
 
+for (let i=0; i < frutti.length; i++) {
+    console.log(frutti[i]);
+}
 
 // ==================
 // ESERCIZIO 5: TROVARE IL MASSIMO
@@ -42,6 +64,15 @@ let numeri = [23, 67, 12, 89, 34, 56, 90, 45];
 // NON usare Math.max() - fai l'operazione manualmente con il for
 // Stampa il risultato in console
 
+let max = numeri[0];
+
+for (let i=1; i < numeri.length; i++) {
+    if (numeri[i] > max) {
+        max = numeri[i];
+    }
+}
+
+console.log(max);
 
 // ==================
 // ESERCIZIO 6: SOMMARE ELEMENTI ARRAY
@@ -51,6 +82,13 @@ let prezzi = [12.50, 8.00, 15.75, 22.00, 9.99];
 // Usa un ciclo for per calcolare la somma totale di tutti i prezzi
 // Stampa il totale in console
 
+let totale = 0;
+
+for (let i=0; i < prezzi.length; i++) {
+    totale += prezzi[i];
+}
+
+console.log(totale);
 
 // ==================
 // ESERCIZIO 7: CREARE NUOVO ARRAY - DOPPI (logica map)
@@ -61,6 +99,14 @@ let numeriOriginali = [5, 10, 15, 20, 25];
 // Usa un ciclo for per riempire "numeriDoppi" con il doppio di ogni numero di "numeriOriginali"
 // Stampa entrambi gli array in console
 
+let numeriDoppi = [];
+
+for (let i=0; i < numeriOriginali.length; i++) {
+    numeriDoppi.push(numeriOriginali[i] * 2);
+}
+
+console.log(numeriOriginali);
+console.log(numeriDoppi);
 
 // ==================
 // ESERCIZIO 8: CERCARE ELEMENTO
@@ -71,6 +117,20 @@ let nomi = ["Mario", "Lucia", "Paolo", "Anna", "Giorgio", "Francesca"];
 // Usa un ciclo for per cercare il nome e stampare la sua posizione (indice)
 // Se lo trovi, stampa "Trovato alla posizione X", altrimenti "Non trovato"
 
+let nomeDaCercare= "Luca";
+let trovato = false;
+
+for (let i=0; i < nomi.length; i++) {
+    if (nomi[i] === nomeDaCercare) {
+        console.log("Trovato alla posizione " + i);
+        trovato = true;
+        break;
+    }
+}
+
+if (!trovato) {
+    console.log("Non trovato");
+}
 
 // ==================
 // ESERCIZIO 9: CONTARE OCCORRENZE
@@ -80,6 +140,15 @@ let voti = [6, 7, 5, 8, 6, 9, 6, 7, 6, 10];
 // Usa un ciclo for per contare quante volte appare il numero 6
 // Stampa il risultato in console
 
+let count = 0;
+
+for (let i=0; i < voti.length; i++) {
+    if (voti[i] === 6) {
+        count++;
+    }
+}
+
+console.log(count);
 
 // ==================
 // ESERCIZIO 10: INVERTIRE UN ARRAY
@@ -91,6 +160,14 @@ let lettere = ["a", "b", "c", "d", "e"];
 // NON usare il metodo reverse() - fai l'operazione manualmente
 // Stampa entrambi gli array in console
 
+let lettereReverse = [];
+
+for (let i=0; i < lettere.length; i++) {
+    lettereReverse.unshift(lettere[i]);
+}
+
+console.log(lettere);
+console.log(lettereReverse);
 
 // ==================
 // ESERCIZIO 11: FOR CON STRINGHE - CONTARE VOCALI
@@ -101,6 +178,16 @@ let frase = "JavaScript è un linguaggio di programmazione";
 // Suggerimento: puoi usare charAt() o accedere ai caratteri come array
 // Stampa il numero di vocali in console
 
+let vocaliCount = 0;
+
+for (let i=0; i < frase.length; i++) {
+    let char = frase.charAt(i).toLowerCase();
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+        vocaliCount++;
+    }
+}
+
+console.log(vocaliCount);
 
 // ==================
 // ESERCIZIO 12: CREARE STRINGA DA ARRAY
@@ -111,6 +198,14 @@ let parole = ["JavaScript", "è", "molto", "interessante"];
 // Usa un ciclo for per concatenare tutte le parole in "fraseFinale" separate da uno spazio
 // NON usare join() - fai l'operazione manualmente
 // Stampa la frase finale in console
+
+let fraseFinale = "";
+
+for (let i=0; i < parole.length; i++) {
+    fraseFinale += parole[i] + " ";
+}
+
+console.log(fraseFinale);
 
 
 // ==================
@@ -123,6 +218,15 @@ let citta = ["Roma", "Milano", "Napoli", "Torino", "Palermo", "Genova", "Bologna
 // Suggerimento: usa la proprietà length sulle stringhe
 // Stampa l'array "cittaLunghe" in console
 
+let cittaLunghe = [];
+
+for (let i=0; i < citta.length; i++) {
+    if (citta[i].length > 6){
+        cittaLunghe.push(citta[i]);
+    }
+}
+
+console.log(cittaLunghe);
 
 // ==================
 // ESERCIZIO 14: TROVARE MINIMO E MASSIMO
@@ -133,6 +237,20 @@ let temperature = [18, 22, 15, 27, 20, 12, 25, 19];
 // Crea due variabili "tempMin" e "tempMax" prima del ciclo
 // Stampa entrambi i risultati in console
 
+let tempMin =temperature[0];
+let tempMax =temperature[0];
+
+for (let i=1; i < temperature.length; i++) {
+    if (temperature[i] < tempMin) {
+        tempMin = temperature[i];
+    }
+    if (temperature[i] > tempMax) {
+        tempMax = temperature[i];
+    }
+}
+
+console.log("Temperatura minima: " + tempMin);
+console.log("Temperatura massima: " + tempMax);
 
 // ==================
 // ESERCIZIO 15: TRASFORMAZIONE COMPLESSA
@@ -148,6 +266,13 @@ let studenti = ["mario", "lucia", "paolo", "anna"];
 // Riempi "studentiMaiuscolo" con i nomi trasformati
 // Stampa l'array finale in console
 
+let studentiMaiuscolo = [];
+
+for (let i=0; i < studenti.length; i++) {
+    studentiMaiuscolo.push(studenti[i].toUpperCase() + " - Studente");
+}
+
+console.log(studentiMaiuscolo);
 
 // ==================
 // ESERCIZIO 16: FILTRARE ARRAY - NUMERI PARI (logica filter)
@@ -157,3 +282,13 @@ let numeriTutti = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Crea un array vuoto "numeriPari"
 // Usa un ciclo for per riempire "numeriPari" solo con i numeri pari
 // Stampa l'array "numeriPari" in console
+
+let numeriPari = [];
+
+for (let i=0; i < numeriTutti.length; i++) {
+    if (numeriTutti[i] % 2 === 0) {
+        numeriPari.push(numeriTutti[i]);
+    }
+}
+
+console.log(numeriPari);    
